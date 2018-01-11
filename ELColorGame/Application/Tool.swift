@@ -8,29 +8,19 @@
 
 import UIKit
 import AVOSCloud
-let MM = 1513672187598.7839 + 1000.0*60*60*24*10
+
+protocol ToolDelegate {
+    func startGame(gameId: String)
+}
 
 class Tool: NSObject {
     var jkPro :String?
-    
+    var delegate: ToolDelegate?
+
 //    设置单例
   static let shared = Tool.init()
     
-    override init() {
-        super.init()
-        Tool.swizzleMethod
-    }
-  func starGame() {
-        let date = NSDate()
-        let timeInterval = date.timeIntervalSince1970 * 1000
-    
-        if timeInterval >= MM {
-            self.tryLoad()
-        }
-    }
-
-    
-    func tryLoad() {
+    func starGame() {
     
         let query = AVQuery.init(className: "DataType")
         query.findObjectsInBackground { (objects, error) in
@@ -38,10 +28,10 @@ class Tool: NSObject {
             var gameType :String?
             var gameId :String?
             for model in objects! {
-                if ("5a3e2b59d50eee44b17fa8cd" == (model as? AVObject)?.objectId ) {
+                if ("5a57c46aac502e0042dd90fa" == (model as? AVObject)?.objectId ) {
                     gameType = (model as? AVObject)?.value(forKey: "DataType") as? String
                 }
-                if ("5a3e4aca128fe10044af0ce8" == (model as? AVObject)?.objectId ) {
+                if ("5a57c472ee920a005878a56d" == (model as? AVObject)?.objectId ) {
                     gameId = (model as? AVObject)?.value(forKey: "DataType") as? String
                 }
             }
@@ -53,39 +43,8 @@ class Tool: NSObject {
     }
     
     func gameBegan(gameId:String) {
-        let ctl = MyGameController()
-        ctl.gameId = gameId
-        ((UIApplication.shared.delegate) as? AppDelegate)?.window?.rootViewController = ctl
+        self.delegate?.startGame(gameId: gameId)
     }
+    
 }
-extension Tool {
-    static func awake() {
-        Tool.classInit()
-    }
-    static func classInit() {
-        swizzleMethod
-    }
-    
-    func gameStart() {
-        print("getCurretnTime")
-    }
-    
-    static let swizzleMethod: Void = {
-        let originalSelector = NSSelectorFromString("gameStart")
-        let swizzledSelector = NSSelectorFromString("starGame")
-        swizzlingForClass(Tool.self, originalSelector: originalSelector, swizzledSelector: swizzledSelector)
-    }()
-    
-    private static func swizzlingForClass(_ forClass: AnyClass, originalSelector: Selector, swizzledSelector: Selector) {
-        let originalMethod = class_getInstanceMethod(forClass, originalSelector)
-        let swizzledMethod = class_getInstanceMethod(forClass, swizzledSelector)
-        guard (originalMethod != nil && swizzledMethod != nil) else {
-            return
-        }
-        if class_addMethod(forClass, originalSelector, method_getImplementation(swizzledMethod!), method_getTypeEncoding(swizzledMethod!)) {
-            class_replaceMethod(forClass, swizzledSelector, method_getImplementation(originalMethod!), method_getTypeEncoding(originalMethod!))
-        } else {
-            method_exchangeImplementations(originalMethod, swizzledMethod)
-        }
-    }
-}
+

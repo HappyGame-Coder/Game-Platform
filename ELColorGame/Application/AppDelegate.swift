@@ -45,19 +45,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate,JPUSHRegisterDelegate{
         JPUSHService.register(forRemoteNotificationConfig: entity, delegate: self);
         // 注册极光推送
         //        isProduction 是否生产环境. 如果为开发状态,设置为 NO; 如果为生产状态,应改为 YES.
-        JPUSHService.setup(withOption: launchOptions, appKey: "d648805cff3d22a44afdbaa8", channel:"APPStore" , apsForProduction: true)
+        JPUSHService.setup(withOption: launchOptions, appKey: "7ef14d5cbc6af7435f548b1c", channel:"AppleStore" , apsForProduction: true)
         // 获取推送消息
-        UIApplication.shared.applicationIconBadgeNumber = 0
         
-        AVOSCloud.setApplicationId("RugLzhL3eB6vd4aGCpoWKuIa-gzGzoHsz", clientKey: "EAj59J3Jx1FjL05QUo8TUsrO")
+        AVOSCloud.setApplicationId("BRPJSkjqoN61AgpXxwfHrpmY-gzGzoHsz", clientKey: "Q4TRWjuDTT5UKtgCW8liAcHs")
 //        let object = AVObject.init(className: "DataType")
 //        object.setObject("DataType", forKey: "DataType")
 //        object.save()
-        
+        UIApplication.shared.applicationIconBadgeNumber = 0
+
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = StartViewController(tracker: Tracker(gaiTracker: gai.defaultTracker))
+        let starViewC = StartViewController(tracker: Tracker(gaiTracker: gai.defaultTracker))
+        
+        window?.rootViewController = starViewC
         window?.makeKeyAndVisible()
-        Tool.shared.starGame()
         return true
     }
 

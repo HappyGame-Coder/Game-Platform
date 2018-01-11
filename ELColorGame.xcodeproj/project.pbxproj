@@ -41,7 +41,6 @@
 		4E698EDC1F20F5740091137D /* ArrayRandomSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E698EDB1F20F5740091137D /* ArrayRandomSpec.swift */; };
 		4E74E3EA1C5CE76800D50FD8 /* InfoViewControllerSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6BBC2329D6DDB8E4B4666E /* InfoViewControllerSpec.swift */; };
 		4E7903B71C635FED00767BE4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4E7903B61C635FED00767BE4 /* GoogleService-Info.plist */; };
-		4E835C101BC091C600AA9293 /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E835C0F1BC091C600AA9293 /* GameKit.framework */; };
 		4EC4B7DF1BB566BC00BCA4A9 /* BebasNeueBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4E4D9EAA1BB4B078001104C7 /* BebasNeueBold.otf */; };
 		4ED160ED1F18F979007AD289 /* Pods_ELColorGame.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF86A76DCC2ED28944018335 /* Pods_ELColorGame.framework */; };
 		9A60507C6A2FC43278B4C20E /* AlertActionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A6EEBF4F62377BFD81EEC79 /* AlertActionFactory.swift */; };
@@ -100,7 +99,6 @@
 		C147C04EAB9C82528B1B0D69 /* Pods_ELColorGameTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 636BDCE52918337C781B3CE2 /* Pods_ELColorGameTests.framework */; };
 		D1C16A4BD18417C45898D8FD /* GAIDictionaryFactoryFake.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C1646CE359B10190015F61 /* GAIDictionaryFactoryFake.swift */; };
 		E1856A931FE16336007AFDAB /* SwitchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1856A921FE16335007AFDAB /* SwitchViewController.swift */; };
-		E18899B52007A80D0065E317 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E18899B72007A80D0065E317 /* InfoPlist.strings */; };
 		E1D4528C1FEE864B00FA5D89 /* AppDelegate+GameCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D4528B1FEE864B00FA5D89 /* AppDelegate+GameCache.swift */; };
 		E1D4528E1FEE875400FA5D89 /* Tool.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D4528D1FEE875300FA5D89 /* Tool.swift */; };
 		E1D452911FEE8ED900FA5D89 /* MyGameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1D4528F1FEE8ED900FA5D89 /* MyGameController.swift */; };
@@ -166,7 +164,6 @@
 		4E50FAD31CC64350001BD4EC /* Button+BackgroundColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Button+BackgroundColor.swift"; sourceTree = "<group>"; };
 		4E698EDB1F20F5740091137D /* ArrayRandomSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArrayRandomSpec.swift; sourceTree = "<group>"; };
 		4E7903B61C635FED00767BE4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		4E835C0F1BC091C600AA9293 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		4FBE32F695BD5CF529655FDC /* Pods-ELColorGameTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELColorGameTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ELColorGameTests/Pods-ELColorGameTests.release.xcconfig"; sourceTree = "<group>"; };
 		636BDCE52918337C781B3CE2 /* Pods_ELColorGameTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ELColorGameTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		68F0D04DB415FBE68AA6510C /* Pods-ELColorGameTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELColorGameTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ELColorGameTests/Pods-ELColorGameTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -230,11 +227,6 @@
 		C135F0B163D5251C9BB87299 /* Pods-ELColorGame.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELColorGame.release.xcconfig"; path = "Pods/Target Support Files/Pods-ELColorGame/Pods-ELColorGame.release.xcconfig"; sourceTree = "<group>"; };
 		D1C1646CE359B10190015F61 /* GAIDictionaryFactoryFake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GAIDictionaryFactoryFake.swift; sourceTree = "<group>"; };
 		E1856A921FE16335007AFDAB /* SwitchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchViewController.swift; sourceTree = "<group>"; };
-		E18899B1200796360065E317 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ../ja.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
-		E18899B2200796370065E317 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
-		E18899B62007A80D0065E317 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E18899B82007A80E0065E317 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E18899B92007A8140065E317 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E19CB8851FEE617400CADE68 /* ELColorGame.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = ELColorGame.entitlements; sourceTree = "<group>"; };
 		E1D4528B1FEE864B00FA5D89 /* AppDelegate+GameCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+GameCache.swift"; sourceTree = "<group>"; };
 		E1D4528D1FEE875300FA5D89 /* Tool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tool.swift; sourceTree = "<group>"; };
@@ -249,7 +241,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4ED160ED1F18F979007AD289 /* Pods_ELColorGame.framework in Frameworks */,
-				4E835C101BC091C600AA9293 /* GameKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -613,7 +604,6 @@
 			isa = PBXGroup;
 			children = (
 				4E2494251C6F748600EA3875 /* Localizable.strings */,
-				E18899B72007A80D0065E317 /* InfoPlist.strings */,
 			);
 			path = Translations;
 			sourceTree = "<group>";
@@ -698,7 +688,6 @@
 		9FBC9D9B73E2FB0AEAEBAFC9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4E835C0F1BC091C600AA9293 /* GameKit.framework */,
 				BF86A76DCC2ED28944018335 /* Pods_ELColorGame.framework */,
 				636BDCE52918337C781B3CE2 /* Pods_ELColorGameTests.framework */,
 			);
@@ -808,10 +797,10 @@
 					4E4BB56E1BB410240043C80C = {
 						CreatedOnToolsVersion = 7.0;
 						LastSwiftMigration = 0830;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 						SystemCapabilities = {
 							com.apple.GameCenter = {
-								enabled = 1;
+								enabled = 0;
 							};
 							com.apple.Push = {
 								enabled = 1;
@@ -836,7 +825,6 @@
 			knownRegions = (
 				en,
 				Base,
-				ja,
 			);
 			mainGroup = 4E4BB5661BB410240043C80C;
 			productRefGroup = 4E4BB5701BB410240043C80C /* Products */;
@@ -862,7 +850,6 @@
 				4E2494271C6F748600EA3875 /* Localizable.strings in Resources */,
 				4E40715B1BB5D58C00509C4B /* bubble_pop_sound.m4a in Resources */,
 				9A67218EFCC354E860949D2A /* LaunchScreen.storyboard in Resources */,
-				E18899B52007A80D0065E317 /* InfoPlist.strings in Resources */,
 				4E7903B71C635FED00767BE4 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1174,7 +1161,6 @@
 			children = (
 				4E2494281C6F749400EA3875 /* en */,
 				4E2494291C6F749A00EA3875 /* Base */,
-				E18899B2200796370065E317 /* ja */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -1183,19 +1169,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				9A67096A98AF85E62A342136 /* Base */,
-				E18899B1200796360065E317 /* ja */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		E18899B72007A80D0065E317 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E18899B62007A80D0065E317 /* en */,
-				E18899B82007A80E0065E317 /* ja */,
-				E18899B92007A8140065E317 /* Base */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -1297,8 +1272,8 @@
 				CODE_SIGN_ENTITLEMENTS = ELColorGame/ELColorGame.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8CZDA6N593;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 4SH4FAGHGP;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1307,10 +1282,10 @@
 				INFOPLIST_FILE = "$(SRCROOT)/ELColorGame/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoxiaole.kahMMM;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aiahEvelyn.GGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "068632f6-ec9c-4212-a9cd-639ec325d689";
+				PROVISIONING_PROFILE_SPECIFIER = dev;
 				SWIFT_OBJC_BRIDGING_HEADER = "ELColorGame/Supporting Files/BridgingHeader.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1324,9 +1299,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ELColorGame/ELColorGame.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 8CZDA6N593;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 4SH4FAGHGP;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1335,10 +1310,10 @@
 				INFOPLIST_FILE = "$(SRCROOT)/ELColorGame/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.xiaoxiaole.kahMMM;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aiahEvelyn.GGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "00448634-ed37-46df-9247-440e8c988414";
+				PROVISIONING_PROFILE_SPECIFIER = pro;
 				SWIFT_OBJC_BRIDGING_HEADER = "ELColorGame/Supporting Files/BridgingHeader.h";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
