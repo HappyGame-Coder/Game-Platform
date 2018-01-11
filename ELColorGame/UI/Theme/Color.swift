@@ -6,7 +6,9 @@ enum Color: String {
     case darkPurple383357   = "#383357"
     case darkPurple3D3B5E   = "#3D3B5E"
     case gray202B39         = "#202B39"
+    
     case green6BE01A        = "#6BE01A"
+    
     case turquoise54C7C7    = "#54C7C7"
     case blue3023AE         = "#3023AE"
     case blue0091FC         = "#0091FC"

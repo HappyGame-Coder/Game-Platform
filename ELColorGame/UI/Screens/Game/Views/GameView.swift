@@ -6,7 +6,8 @@ class GameView: UIView {
 
     init() {
         super.init(frame: .zero)
-        backgroundColor = UIColor(color: .darkPurple383357)
+//        backgroundColor = UIColor(color: .darkPurple383357)
+        
         addSubviews()
         setupLayout()
         configurePauseButtonAction()
@@ -41,6 +42,13 @@ class GameView: UIView {
     // MARK: Subviews
 
     private func addSubviews() {
+        let bgView = UIImageView.init(frame: self.frame)
+        bgView.image = UIImage.init(named: "background-circles")
+        let imageM = UIImage.init(named: "background-circles")
+        
+//        addSubviews(bgView as! UIView)
+        self.layer.contents = imageM?.cgImage
+//        addSubview(bgView)
         addSubview(topView)
         topView.addSubview(pauseButton)
         topView.addSubview(restartButton)
@@ -70,7 +78,9 @@ class GameView: UIView {
         let label = UILabel(frame: .zero)
         label.text = score.localized
         label.font = UIFont(font: FontFamily.BebasNeue.bold, size: 17)
-        label.textColor = UIColor(color: .lightPurple7D75C7)
+//        label.textColor = UIColor(color: .lightPurple7D75C7)
+        label.textColor = UIColor(color: .orangeFAD961)
+
         return label
     }()
 

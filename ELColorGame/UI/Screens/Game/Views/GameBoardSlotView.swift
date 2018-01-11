@@ -32,7 +32,7 @@ class GameBoardSlotView: UIView {
 
     private let backgroundView: UIView = {
         let view = UIView(frame: .zero)
-        view.backgroundColor = UIColor(color: .darkPurple3D3B5E)
+//        view.backgroundColor = UIColor(color: .darkPurple3D3B5E)
         return view
     }()
 

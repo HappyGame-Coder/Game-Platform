@@ -10,7 +10,7 @@ class Button: UIButton {
 
         setTitle(title, for: .normal)
         titleLabel?.font = UIFont(font: FontFamily.BebasNeue.bold, size: 22)
-        setTitleColor(.white, for: .normal)
+        setTitleColor(.purple, for: .normal)
         layer.cornerRadius = 25.0
         backgroundColor = color
         setBackgroundColor(UIColor.black.withAlphaComponent(0.25), forUIControlState: .highlighted)

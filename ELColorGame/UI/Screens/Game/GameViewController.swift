@@ -63,6 +63,8 @@ class GameViewController: UIViewController {
 
     private func createGameBoardView(gameView: GameView) -> GameBoardView {
         let slotSize = CGSize(width: 44, height: 44)
+//        let slotSize = CGSize(width: 44*2, height: 44*2)
+
         let spacing: CGFloat = 15.5
         let boardSize = gameView.boardContainerView.frame.size
         let (rows, columns) = GameBoardView.maxBoardSize(forViewSize: boardSize, slotSize: slotSize, spacing: spacing)

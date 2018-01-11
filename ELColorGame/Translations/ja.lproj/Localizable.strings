@@ -1,12 +1,12 @@
-"new_game"              = "BeGame";
-"ranking"               = "SENIORITY";
+"new_game"              = "乞う";
+"ranking"               = "リーダーボード";
 
-"score"                 = "FRACTION";
-"resume"                = "RESTART";
-"quit"                  = "ABORT";
-"pause"                 = "SUSPEND";
-"retry"                 = "AGAIN";
-"your_score"            = "YOUR FRACTION";
+"score"                 = "フラクション";
+"resume"                = "再起動";
+"quit"                  = "一時停止";
+"pause"                 = "サスペンド";
+"retry"                 = "リトライ";
+"your_score"            = "あなたの分裂";
 "info_description"      = "Xiaoxiaole is a simple but very addictive game written in Swift during hackathons at EL Passion. If you need to kill some time this game is a perfect choice. Be careful though, you might get so into it that you’ll miss your plans! Big thanks to the creators listed below!";
 "github"                = "Github";
 "dribbble"              = "Dribbble";

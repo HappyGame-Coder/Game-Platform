@@ -17,8 +17,9 @@ class CircleView: SpringView {
 
     override func layoutSubviews() {
         super.layoutSubviews()
-//        layer.cornerRadius = bounds.width / 2
-        self.drawRect(layerF:layer)
+        layer.cornerRadius = bounds.width / 2
+//        self.drawRect(layerF:layer)
+//        self.drawFiveRect(layerF: layer)
         gradientLayer = createGradientLayer(withColors: [topColor, bottomColor])
     }
     
@@ -44,14 +45,14 @@ class CircleView: SpringView {
         let point3 = CGPoint.init(x: imageWH - single * (imageWH/2), y: imageWH / 4)
         let point4 = CGPoint.init(x: imageWH - single * (imageWH/2), y: imageWH / 4 + imageWH / 2)
         let point5 = CGPoint.init(x: imageWH / 2, y: imageWH)
-        let point6 = CGPoint.init(x: single * (imageWH/2), y: imageWH / 4 + imageWH/2)
+//        let point6 = CGPoint.init(x: single * (imageWH/2), y: imageWH / 4 + imageWH/2)
     
         path.move(to: point1)
         path.addLine(to: point2)
         path.addLine(to: point3)
         path.addLine(to: point4)
         path.addLine(to: point5)
-        path.addLine(to: point6)
+//        path.addLine(to: point6)
         path.close()
         
         let laryS = CAShapeLayer.init()
@@ -59,6 +60,37 @@ class CircleView: SpringView {
         laryS.path = path.cgPath
         layerF.mask = laryS
     }
+    
+    func drawFiveRect(layerF:CALayer) { // 五边形
+        let imageWH = (layerF.frame.width ) * 1.0
+        let path = UIBezierPath.init()
+        path.lineWidth = 2
+        let color = UIColor.red
+        color.set() // 设置线条颜色
+        
+        let aPath = UIBezierPath()
+        
+        aPath.lineWidth = 5.0 // 线条宽度
+        aPath.lineCapStyle = CGLineCap.round // 线条拐角
+        aPath.lineJoinStyle = CGLineJoin.round // 终点处理
+        let single = CGFloat.init(sin(M_1_PI / 180*60))
+
+        // Set the starting point of the shape.
+        aPath.move(to: CGPoint.init(x: 100.0, y: 10.0))//(100, 10))
+        aPath.addLine(to: CGPoint.init(x: 200, y: 140))
+        aPath.addLine(to: CGPoint.init(x: 160, y: 10.0))
+        aPath.addLine(to: CGPoint.init(x: 40, y: 140))
+        aPath.addLine(to: CGPoint.init(x: 10, y: 40))
+        aPath.close()
+        
+        // 最后一条线通过调用closePath方法得到
+        let laryS = CAShapeLayer.init()
+        laryS.lineWidth = 2
+        laryS.path = path.cgPath
+        layerF.mask = laryS
+        
+    }
+    
     
     func creatSix(mlayer:CALayer) {
         let path = UIBezierPath.init()

@@ -21,18 +21,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4tr-dN-XRp">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background-circles" translatesAutoresizingMaskIntoConstraints="NO" id="4tr-dN-XRp">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" red="0.21231864392757416" green="0.19725812971591949" blue="0.32951840758323669" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="uea-LB-RAp">
-                                <rect key="frame" x="94" y="309.5" width="187" height="48"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="uea-LB-RAp" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="2LJ-ye-pWa"/>
-                            <constraint firstItem="uea-LB-RAp" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="58q-NP-nDx"/>
                             <constraint firstAttribute="trailing" secondItem="4tr-dN-XRp" secondAttribute="trailing" id="5ov-b3-gis"/>
                             <constraint firstAttribute="bottom" secondItem="4tr-dN-XRp" secondAttribute="bottom" id="Gb6-3n-GEd"/>
                             <constraint firstItem="4tr-dN-XRp" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="Syg-Jt-NMe"/>
@@ -46,6 +40,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="icon" width="187" height="48"/>
+        <image name="background-circles" width="375" height="667"/>
     </resources>
 </document>

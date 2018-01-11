@@ -37,9 +37,12 @@ class MenuView: UIView {
 
     private let blurEffectView = Factory.blurEffectView
 //    private let resumeButton = Button(title: resume.localized, color: UIColor(color: .blue0091FC))
-    private let resumeButton = Button(title: resume.localized, color: UIColor(color: .purple906DD7))
-    private let newGameButton = Button(title: newGame.localized, color: UIColor(color: .orangeF7821C))
-    private let quitButton = Button(title: quit.localized, color: UIColor(color: .blue00C7FF))
+//    private let resumeButton = Button(title: resume.localized, color: UIColor(color: .purple906DD7))
+//    private let newGameButton = Button(title: newGame.localized, color: UIColor(color: .orangeF7821C))
+//    private let quitButton = Button(title: quit.localized, color: UIColor(color: .blue00C7FF))
+    private let resumeButton = Button(title: resume.localized, color: UIColor(color: .orangeFAD961))
+    private let newGameButton = Button(title: newGame.localized, color: UIColor(color: .greenA5E01A))
+    private let quitButton = Button(title: quit.localized, color: UIColor(color: .green6BE01A))
     private let pauseImageView = Factory.pauseImageView
     private let pauseLabelText = Factory.pauseLabel
 
