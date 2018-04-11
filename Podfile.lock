@@ -1,14 +1,11 @@
 PODS:
-  - AVOSCloud (8.0.6)
   - Bolts (1.8.4):
     - Bolts/AppLinks (= 1.8.4)
     - Bolts/Tasks (= 1.8.4)
   - Bolts/AppLinks (1.8.4):
     - Bolts/Tasks
   - Bolts/Tasks (1.8.4)
-  - Crashlytics (3.9.3):
-    - Fabric (~> 1.7.2)
-  - Fabric (1.7.2)
+  - Fabric (1.7.6)
   - FBSDKCoreKit (4.29.0):
     - Bolts (~> 1.7)
   - FirebaseAnalytics (3.9.0):
@@ -29,25 +26,15 @@ PODS:
   - GoogleToolboxForMac/Defines (2.1.3)
   - GoogleToolboxForMac/NSData+zlib (2.1.3):
     - GoogleToolboxForMac/Defines (= 2.1.3)
-  - JCore (1.1.6)
-  - JPush (3.0.7):
-    - JCore (~> 1.1.6)
-  - Nimble (7.0.3)
-  - Quick (1.2.0)
   - SnapKit (3.2.0)
   - Spring (1.0.3)
   - SwiftLint (0.24.0)
 
 DEPENDENCIES:
-  - AVOSCloud
-  - Crashlytics (~> 3.8)
-  - Fabric (~> 1.6)
+  - Fabric
   - FBSDKCoreKit (~> 4.2)
   - GA-SDK-IOS (~> 2.2)
   - Google/Analytics
-  - JPush
-  - Nimble (~> 7.0)
-  - Quick (~> 1.1)
   - SnapKit (~> 3.2)
   - Spring (from `https://github.com/MengTo/Spring.git`, branch `swift3`)
   - SwiftLint
@@ -63,10 +50,8 @@ CHECKOUT OPTIONS:
     :git: https://github.com/MengTo/Spring.git
 
 SPEC CHECKSUMS:
-  AVOSCloud: 3fc5837eb4019f75eecd3064ed79d92656cbe2b5
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
-  Crashlytics: dbb07d01876c171c5ccbdf7826410380189e452c
-  Fabric: 9cd6a848efcf1b8b07497e0b6a2e7d336353ba15
+  Fabric: f8d42c893bb187326a7968b62abe55c36a987a46
   FBSDKCoreKit: 6f139173dc63a1deaff4430a55f2fe5bb222d2af
   FirebaseAnalytics: e5fe8486efc01bec33f6bf82e2fa9fce4b124052
   FirebaseCore: 9691ee2ade70c098d7cf92440f4303f16d83ca75
@@ -75,14 +60,10 @@ SPEC CHECKSUMS:
   Google: 98da4b1a60ed0beb80a290387a28333406a1eb90
   GoogleAnalytics: f42cc53a87a51fe94334821868d9c8481ff47a7b
   GoogleToolboxForMac: 2501e2ad72a52eb3dfe7bd9aee7dad11b858bd20
-  JCore: 18fc8725124f26e55625eaf224659b3a999dcf63
-  JPush: 111b79b8a0169ab8fd4c486dac3ed166ed69293e
-  Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
-  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
   SnapKit: 1ca44df72cfa543218d177cb8aab029d10d86ea7
   Spring: 3f02b5dc3308572ef177b3cad0fa7bbc4b0706f7
   SwiftLint: a014c92b4664e8b13f380f8640a51bb1733778ba
 
-PODFILE CHECKSUM: c38d96d8d2482097bdd294cf04cc194196a3c8cf
+PODFILE CHECKSUM: c05906619ebebf68cb39d857e5a67b45890afed4
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.4.0

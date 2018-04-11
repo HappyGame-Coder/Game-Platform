@@ -9,23 +9,18 @@ def pod_ui()
 end
 
 def pod_infrastructure()
-  pod 'Crashlytics', '~> 3.8'
-  pod 'Fabric', '~> 1.6'
+#  pod 'Crashlytics'
+  pod 'Fabric'
   pod 'FBSDKCoreKit', '~> 4.2'
   pod 'GA-SDK-IOS', '~> 2.2'
   pod 'Google/Analytics'
   pod 'SwiftLint'
 end
 
-target 'ELColorGame' do
+target 'GamePlatform' do
   pod_infrastructure()
   pod_ui()
-  pod 'JPush'
-  pod 'AVOSCloud'
+#  pod 'JPush'
+#  pod 'AVOSCloud'
 end
 
-target 'ELColorGameTests' do
-  pod 'Google/Analytics'
-  pod 'Nimble', '~> 7.0'
-  pod 'Quick', '~> 1.1'
-end

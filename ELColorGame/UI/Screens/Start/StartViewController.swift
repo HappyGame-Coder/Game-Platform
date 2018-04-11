@@ -1,7 +1,7 @@
 import UIKit
 import GameKit
 
-class StartViewController: UIViewController, StartViewDelegate,GKGameCenterControllerDelegate ,ToolDelegate{
+class StartViewController: UIViewController, StartViewDelegate,GKGameCenterControllerDelegate {
 
     
 
@@ -17,23 +17,11 @@ class StartViewController: UIViewController, StartViewDelegate,GKGameCenterContr
     }
 
     func startGame(gameId: String) {
-//        DispatchQueue.main.async {
-            let ctl = MyGameController()
-            ctl.gameId = gameId
-            self.present(ctl, animated: true, completion: nil)
-//        }
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)        
         tracker.trackScreenWithName(screenName: "StartViewController")
-        //创建并行队列
-//        let concurrent = DispatchQueue(label: "concurrentQueue1", attributes: .concurrent)
-//        concurrent.async {
-            Tool.shared.delegate = self
-            Tool.shared.starGame()
-//        }
-        
     }
 
     override func loadView() {
